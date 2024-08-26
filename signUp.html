@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Pu Ngaol Flood Watch</title>
+    <link rel="stylesheet" href="theme.css">
+    <script src="https://kit.fontawesome.com/b3841f4a26.js" crossorigin="anonymous"></script>
+    <script src="hamburger.js" defer></script>
+    <script src="index.js" defer></script>
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript" defer>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+
+        <header>
+
+
+            <div id="headerBox">
+
+                <h1>Pu Ngaol Flood Watch</h1>
+
+            </div>
+
+
+            <a id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav id="mainNav">
+                <ul class="mainNav">
+                    <li class="nav"><a href="index.html">
+                            <div class="headContainer">
+
+                                <i class="fa-solid fa-house fa-xl"></i>
+                            </div>Home
+                        </a></li>
+
+                    <li class="nav"><a href="simulation.html">
+                            <div class="headContainer">
+
+                                <i class="fa-solid fa-umbrella fa-xl"></i>
+                            </div> Sim
+                        </a></li>
+
+                    <li class="nav"><a href="info.html">
+                            <div class="headContainer">
+
+                                <i class="fa-solid fa-circle-info fa-xl"></i>
+                            </div> Info
+                        </a></li>
+
+
+
+                    <li class="nav"><a href="donate.html">
+                            <div class="headContainer">
+
+                                <i class="fa-solid fa-hand-holding-dollar fa-xl"></i>
+                            </div>
+                            Donate
+                        </a></li>
+                    <li class="nav active"><a href="signUp.html">
+                            <div class="headContainer">
+
+                                <i class="fa-solid fa-envelope fa-xl"></i>
+                            </div>
+                            Alerts
+                        </a></li>
+                    <li class="nav"><a href="admin.html">
+                            <div class="headContainer">
+
+                                <i class="fa-solid fa-gear fa-xl"></i>
+                            </div>
+                            Admins
+                        </a></li>
+                </ul>
+
+            </nav>
+
+
+
+
+
+
+
+        </header>
+
+
+
+        <section id="desc">
+            <h2 id="page-title">Sign up for Email Alerts</h2>
+
+
+        </section>
+        <section id="mainSection">
+            <div class="container" id="link-images">
+
+            </div>
+
+        </section>
+
+        <main>
+
+
+
+            <form id="form" action="/send" method="POST">
+
+                <fieldset>
+
+                    <legend>Sign Up!</legend>
+
+                    <p>Sign up to our Email alerts to ensure that you never miss out on our updates or any important
+                        news.<br> <br> * Fields are necessary.</p>
+
+                    <!-- * This is the entry box for the First Name -->
+
+                    <label for="firstName">First Name:</label>
+
+                    <input type="text" name="firstName" id="firstName" placeholder="* First Name *" required>
+
+                    <!-- * -->
+
+                    <!-- *** This is the entry box for the Email Address -->
+
+                    <label for="email">Email Address<i class="fa-regular fa-envelope"></i> :</label>
+
+                    <input type="text" name="email" id="email" placeholder="* Your Email Address *" required>
+
+                    <!-- *** -->
+
+                    <!-- **** This is the check box to confirm they would like to recieve SMS alerts -->
+
+                    <label for="check">Are you sure you would like to recieve Email alerts?</label>
+                    <div id="chec">
+                        <input type="checkbox" name="check" id="check" value="True" required>
+                    </div>
+                    <!-- **** -->
+
+                    <!-- Submit Button -->
+
+                    <button id="submit" type="submit">Sign Up<i class="fa-regular fa-paper-plane"></i></button>
+
+                </fieldset>
+
+            </form>
+
+        </main>
+
+
+
+
+        <footer>
+            <small>
+                <i>Copyright &copy; 2024 Our Company</i>
+            </small>
+            <a href="mailto: email@uea.ac.uk">Our Team</a>
+        </footer>
+    </div>
+</body>
